@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# uv-specific
+.uv/
+
+# PyInstaller / py2exe / etc output
+dist/
+build/
+*.spec
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor settings (VSCode, etc.)
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Test coverage
+.coverage
+htmlcov/
+*.cover
+coverage.xml
+
+# Optional: ignore pygame window screenshots or saves, if any
+*.png
+*.bmp
+*.sav
+
