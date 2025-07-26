@@ -1,5 +1,6 @@
 import pygame
 import constants as c
+from player import Player
 
 def main():
     pygame.init()
@@ -8,12 +9,15 @@ def main():
     # FPS things
     clock = pygame.time.Clock()
     dt = 0
+    # Player
+    player = Player(c.SCREEN_WIDTH / 2, c.SCREEN_HEIGHT / 2)
     # game loop
     while(True):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
         screen.fill("black")
+        player.draw(screen)
         pygame.display.flip()
         dt = clock.tick(60) / 1000
         
